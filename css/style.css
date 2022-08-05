@@ -48,6 +48,19 @@ font-family: 'Quicksand', sans-serif;
     padding: 10px;
 
 }
+@media screen and (max-width: 550px){
+    .menu{
+        padding-left: 40px;
+      
+
+    }
+    .menu a{
+      
+        font-size: 10px;
+    }
+}
+    
+
 
                 /**********************************************/
 
@@ -59,7 +72,7 @@ font-family: 'Quicksand', sans-serif;
     background-image: url("../Multimedia/jugandofutbol.jpeg");
     height: max-content;
     background-size: cover;
-    background-position:0 -220px;
+   
     background-attachment: fixed;
    background-position-x: right;
 }
@@ -72,8 +85,10 @@ font-family: 'Quicksand', sans-serif;
     width: 100%;
     height: 600px;
     background: linear-gradient(to right, rgba(5, 24, 3, 0.795), rgba(19, 19, 19, 0.63));
-    
+    background-attachment: fixed;
     text-align:center;
+    background-position: bottom;
+    
 }
 .texto-saltando h2{
     padding-left: 40px;
@@ -85,8 +100,25 @@ font-family: 'Quicksand', sans-serif;
 .texto-saltando p{
     letter-spacing: 10px;
     font-size: 20PX;
-font-family: 'Quicksand', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+}
+
+@media screen and (max-width: 550px){
+  
+ 
+    .texto-saltando h2{
+        font-size: 60px;
+    }
+    .texto-saltando p{
+        font-size: 15px;
+        letter-spacing: 5px;
+    }
 }
 
                /**********************************************/
                /*DIDACTICO*/
+.prueba{
+    width: 100%;
+    height: 400px;
+    background-color: #000;
+}
