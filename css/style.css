@@ -62,7 +62,7 @@ body{
     }
     .menu a{
       
-        font-size: 10px;
+        font-size: 15px;
     }
 }
     
@@ -72,15 +72,16 @@ body{
 
                 /*SECCION SALTANDO BARRERAS IMG*/
 
+
+
 .container-seccion{
+    
     width: 100%;
-  
-    background-image: url("../Multimedia/jugandofutbol.jpeg");
+    background-image: url("../Multimedia/Posibleportada.jpg");
     height: max-content;
     background-size: cover;
-   
     background-attachment: fixed;
-   background-position-x: right;
+    background-position: center;
 }
 .texto-saltando{
     color: white;
@@ -104,9 +105,22 @@ body{
     font-size: 80px;
 }
 .texto-saltando p{
-    letter-spacing: 10px;
+    padding-top: 20px;
+    width: 80%;
     font-size: 20PX;
     font-family: 'Quicksand', sans-serif;
+}
+ .mision {
+    
+   position: absolute;
+   margin-top: 550px;
+    width: 40%;
+    padding: 10px;
+    padding-bottom: 50px;
+    background-color: #7fc14d;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
 }
 
 @media screen and (max-width: 550px){
@@ -117,7 +131,7 @@ body{
     }
     .texto-saltando p{
         font-size: 15px;
-        letter-spacing: 5px;
+        
     }
 }
 
@@ -126,13 +140,15 @@ body{
                /*ACTIVIDADES*/
 
 #actividades{
-    background-color: #81c04e;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.589);
+    background-color: rgb(20, 20, 20);
     color: white;
    padding-bottom: 20px;
   
 }
 
-.h1{
+#actividades .h1{
+    color: #ec7742;
     text-align: center;
     
 }
@@ -179,76 +195,170 @@ body{
 
 
 /**************************/
-/* PROYECTOS SECTION*/
+/* PROYECTOS FRUTOS SECOS*/
 
 #proyectos{
-    background-color: rgb(20, 20, 20);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.589);
+    background-color: #81c04e;
     color: white;
     padding-bottom: 60px;
    
 }
+#proyectos .h1{
+    font-weight: 800;
+    color:  rgb(7, 37, 5);
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+.tamano{
+    object-fit: cover;
+    width:500px;
+    height: 400px;
+
+}
+.tamano2{
+    object-fit: cover;
+    object-position: 0 -250px;
+    width:500px;
+    height: 400px;
+}
 .container-proyectos{
-    display: flex;    
-  
+    display: flex;  
+   
+    text-align: center;
     align-items: center;
     margin: 0 auto;
-    height: fit-content;
-    width: 57%;
     
+   
+    width: 90%;
 
 }
+
 .carrusel2{
+   margin-right: 10px;
+   padding: 10px;
+   background-color: rgb(7, 37, 5);
+   border-radius: 10px;
    
-    width: 1000px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.5);
-    margin: 50px;
-    margin-top: 0;
-    margin-bottom: 0;
-    height: auto;
-
-  
- 
 }
-.container-proyectos p{
-    text-align: center;
-   margin:0;
-    padding-right:40px;
-  
-   
-   
+
+.text-frutos {
+    display: flex;
+
+   height: fit-content;
+    border-radius: 5px;
+    margin-left: 50px;
     
 }
-@media screen and (max-width: 1380px){
-    .container-proyectos{
-        width: 70%;
-        transition: 0.3s;
-    }
-    .carrusel2{
-        width: 100%;
-    }
-    .container-proyectos p{
-        width: 100%;
-    }
+.ofrecer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(7, 37, 5);
+    padding: 30px;
+    border-radius: 5px;
+    margin-right: 10px;
 }
-@media screen and (max-width: 700px){
+.comohacemos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(7, 37, 5);
+    padding: 30px;
+    border-radius: 5px;
+    margin-left: 10px;
+    
+}
+.container-proyectos h2{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+   ;
+}
+.text-frutos p{
+    text-align: justify;
+    
+}
+@media screen and (max-width: 1500px){
+    .text-frutos{
+    flex-direction: column;
+
+    }
+    .ofrecer{
+        margin: 0;
+    }
+    .comohacemos{
+    margin: 0;
+    margin-top: 20px;
+    }
+    
+}
+@media screen and (max-width: 1200px){
     .container-proyectos{
-        width: 70%;
-        transition: 0.3s;
         flex-direction: column;
     }
-    .carrusel2{
-        padding: 0;
+    .ofrecer{
         margin: 0;
-        margin-right: 0;
-        margin-bottom: 40px;
+        margin-top: 20px;
     }
-    .container-proyectos p{
-        width: 100%;
+    .text-frutos{
         margin: 0;
-        padding: 0;
-        font-size: 12px;
+    }
+    .carrusel2{
+        margin: 0;
     }
 }
+@media screen and (max-width: 580px){
+    .tamano{
+        object-fit: cover;
+        width:300px;
+        height: 200px;
+    
+    }
+    .tamano2{
+        object-fit: cover;
+        object-position: 0 -200px;
+        width:300px;
+        height: 200px;
+    }
+    .container-proyectos h2{
+        font-family: 'Oswald', sans-serif;
+        font-weight: 600;
+        font-size: 20px;
+       ;
+    }
+    .text-frutos p{
+        text-align: justify;
+        font-size: 10px;
+        
+    }
+   #proyectos h1{
+    transition: 0.3s;
+    padding-left: 20px;
+    padding-right: 20px;
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 350px){
+
+
+    .tamano{
+        object-fit: cover;
+        width:100%;
+        
+    }
+    .tamano2{
+        object-fit: cover;
+        object-position: 0 -200px;
+        width:100%;
+       
+    }
+}
+
+
+
 
 
 /**************************/
@@ -271,9 +381,11 @@ body{
 
 
 }
-.formulario.btn{
- 
+#contacto h1{
+    font-weight: 800;
+    text-align: center;
 }
+
 .formulario .btn:hover{
     background-color: var(--verde);
     color: rgb(255, 255, 255);
@@ -299,6 +411,7 @@ footer{
 
 /**** REDES SOCIALES*/
 .redessociales{
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.178);
     position: fixed;
     display: flex;
     
@@ -313,7 +426,7 @@ footer{
 
 }
 .ig{
-    width: 30px;
+    width: 31px;
     margin: 5px;
     margin-right: 5px;
 }
