@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400&family=Oswald:wght@200;300;400;500;600;700&family=Quicksand:wght@300;400;500;600&display=swap');
+font-family: 'Dosis', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Quicksand', sans-serif;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --verde: #7fc14d46;
+}
+
+                                    /*HEADER*/
+.header{
+    display: flex;
+    width: 100%;
+    height: 70px;
+    background: #f5f5f5;
+    
+}
+.container-header{
+    display: flex;
+    align-items: center;
+ 
+    width: 85%;
+    margin: 0 auto;
+    justify-content: space-between;
+
+
+}
+.container-header img{
+  width: 100px;
+}
+.menu a{
+    
+    text-decoration: none;
+    color: #000;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    padding: 10px;
+    
+}
+.menu a:hover{
+    background-color: var(--verde);
+    border-radius: 10px;
+    padding: 10px;
+
+}
+
+                /**********************************************/
+
+                /*SECCION SANTANDO BARRERAS IMG*/
+
+.container-seccion{
+    width: 100%;
+  
+    background-image: url("../Multimedia/jugandofutbol.jpeg");
+    height: max-content;
+    background-size: cover;
+    background-position:0 -220px;
+    background-attachment: fixed;
+   background-position-x: right;
+}
+.texto-saltando{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(to right, rgba(5, 24, 3, 0.795), rgba(19, 19, 19, 0.63));
+    
+    text-align:center;
+}
+.texto-saltando h2{
+    padding-left: 40px;
+    padding-right: 40px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 80px;
+}
+.texto-saltando p{
+    letter-spacing: 10px;
+    font-size: 20PX;
+font-family: 'Quicksand', sans-serif;
+}
+
+               /**********************************************/
+               /*DIDACTICO*/
