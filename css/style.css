@@ -1,23 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400&family=Oswald:wght@200;300;400;500;600;700&family=Quicksand:wght@300;400;500;600&display=swap');
-font-family: 'Dosis', sans-serif;
+/* font-family: 'Dosis', sans-serif;
 font-family: 'Oswald', sans-serif;
-font-family: 'Quicksand', sans-serif;
+font-family: 'Quicksand', sans-serif; */
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: #000;
+}
 :root{
-    --verde: #7fc14d46;
+    --verde: #7fc14d;
 }
 
                                     /*HEADER*/
 .header{
+    position: fixed;
+    z-index: 99;
     display: flex;
     width: 100%;
     height: 70px;
     background: #f5f5f5;
+    box-shadow: 0 0 20px rgba(61, 61, 61, 0.247);
     
 }
 .container-header{
@@ -64,7 +70,7 @@ font-family: 'Quicksand', sans-serif;
 
                 /**********************************************/
 
-                /*SECCION SANTANDO BARRERAS IMG*/
+                /*SECCION SALTANDO BARRERAS IMG*/
 
 .container-seccion{
     width: 100%;
@@ -115,10 +121,208 @@ font-family: 'Quicksand', sans-serif;
     }
 }
 
+
                /**********************************************/
-               /*DIDACTICO*/
-.prueba{
-    width: 100%;
-    height: 400px;
-    background-color: #000;
+               /*ACTIVIDADES*/
+
+#actividades{
+    background-color: #81c04e;
+    color: white;
+   padding-bottom: 20px;
+  
 }
+
+.h1{
+    text-align: center;
+    
+}
+
+.container-actividades{
+    display: flex;
+    justify-content: center;
+    width: 52%;
+
+    margin: 0 auto;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+
+.actividades-texto{
+    margin-top: 20px;
+    width: 52%;
+    
+    margin: 0 auto;
+    text-align: center;
+   
+}
+
+@media screen and (max-width: 950px){
+    .container-actividades{
+        width: 90%;
+    }
+    .actividades-texto{
+        width: 80%;
+        
+    }
+}
+@media screen and (max-width: 700px){
+    .container-actividades{
+        width: 90%;
+    }
+    .actividades-texto{
+        width: 80%;
+        
+        font-size: 12px;
+    }
+}
+
+
+/**************************/
+/* PROYECTOS SECTION*/
+
+#proyectos{
+    background-color: rgb(20, 20, 20);
+    color: white;
+    padding-bottom: 60px;
+   
+}
+.container-proyectos{
+    display: flex;    
+  
+    align-items: center;
+    margin: 0 auto;
+    height: fit-content;
+    width: 57%;
+    
+
+}
+.carrusel2{
+   
+    width: 1000px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    margin: 50px;
+    margin-top: 0;
+    margin-bottom: 0;
+    height: auto;
+
+  
+ 
+}
+.container-proyectos p{
+    text-align: center;
+   margin:0;
+    padding-right:40px;
+  
+   
+   
+    
+}
+@media screen and (max-width: 1380px){
+    .container-proyectos{
+        width: 70%;
+        transition: 0.3s;
+    }
+    .carrusel2{
+        width: 100%;
+    }
+    .container-proyectos p{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 700px){
+    .container-proyectos{
+        width: 70%;
+        transition: 0.3s;
+        flex-direction: column;
+    }
+    .carrusel2{
+        padding: 0;
+        margin: 0;
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+    .container-proyectos p{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        font-size: 12px;
+    }
+}
+
+
+/**************************/
+/* CONTACTO SECTION*/
+#contacto{
+    font-weight: 700;
+    background: #ec7742;
+    
+}
+.formulario{
+    
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto; 
+    justify-content: center;
+    align-items: center;
+}
+.formulario .entrada{
+    width: 500px;
+
+
+}
+.formulario.btn{
+ 
+}
+.formulario .btn:hover{
+    background-color: var(--verde);
+    color: rgb(255, 255, 255);
+    
+    
+}
+@media screen and (max-width: 580px){
+    .formulario .entrada{
+        width: 90%;
+    }
+}
+    
+
+
+
+footer{
+    padding: 100px;
+}
+
+
+
+
+
+/**** REDES SOCIALES*/
+.redessociales{
+    position: fixed;
+    display: flex;
+    
+    align-items: center;
+
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background-color: white;
+    border-top-left-radius: 10px;
+    padding: 5px;
+
+}
+.ig{
+    width: 30px;
+    margin: 5px;
+    margin-right: 5px;
+}
+.youtube{
+    width: 42px;
+    margin: 5px;
+    
+}
+
+
+
+
