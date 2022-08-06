@@ -136,64 +136,6 @@ body{
 }
 
 
-               /**********************************************/
-               /*ACTIVIDADES*/
-
-#actividades{
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.589);
-    background-color: rgb(20, 20, 20);
-    color: white;
-   padding-bottom: 20px;
-  
-}
-
-#actividades .h1{
-    color: #ec7742;
-    text-align: center;
-    
-}
-
-.container-actividades{
-    display: flex;
-    justify-content: center;
-    width: 52%;
-
-    margin: 0 auto;
-    margin-bottom: 20px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
-}
-
-
-.actividades-texto{
-    margin-top: 20px;
-    width: 52%;
-    
-    margin: 0 auto;
-    text-align: center;
-   
-}
-
-@media screen and (max-width: 950px){
-    .container-actividades{
-        width: 90%;
-    }
-    .actividades-texto{
-        width: 80%;
-        
-    }
-}
-@media screen and (max-width: 700px){
-    .container-actividades{
-        width: 90%;
-    }
-    .actividades-texto{
-        width: 80%;
-        
-        font-size: 12px;
-    }
-}
-
-
 /**************************/
 /* PROYECTOS FRUTOS SECOS*/
 
@@ -357,9 +299,162 @@ body{
     }
 }
 
+/***********************/
+/* actividades */
+#actividades{
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../Multimedia/backactividadesfinal2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+#actividades h1{
+    padding: 20px;
+    background-color: #81c04e;
+    border-bottom-left-radius:8px ;
+    border-bottom-right-radius:8px ;
+}
+#actividades .carta:hover{
+    margin-bottom: -10px;
+}
+#actividades h1{
+    padding-top: 10px;
+    text-align: center;
+    color: white;
+    font-weight: 800;
+}
 
+.cartas{
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    
+}
+.carta{
+    width:300px;
+    transition: all 300ms;
+    margin: 10px;
+}
+.carta:hover{
+    width: 350px;
+}
 
+.carta .cover img{
+    width:250px;
+    position: relative;
+    z-index: 1;
+    display: block;
+    top: 40px;
+    transition: all 400ms;
+    margin: auto;
+   
+}
+.carta:hover .cover img{
+    top: 0px;
+    
+}
+.carta .img_back{
+    width:100%;
+    height: 250px;
+    position: absolute;
+    background-size: cover;
+    left: 0;
+    bottom: -100px;
 
+}
+.carta .cover{
+    position: relative;
+    width: 100%;
+    
+    overflow: hidden;
+}
+.carta:nth-of-type(1) .img_back{
+background-image: url(../Multimedia/cocinaback.jpg);
+filter: saturate(5) ;
+}
+.carta:nth-of-type(3) .img_back{
+background-image: url(../Multimedia/Gimnasiajpeg.jpg);
+filter: saturate(10) ;
+}
+.carta:nth-of-type(2) .img_back{
+background-image: url(../Multimedia/tuboljpeg.jpg);
+filter: saturate(2) ;
+}
+
+.carta .descripcion{
+    background-color: white;
+    margin-top: -10px;
+    padding: 30px;
+    border-radius: 5px;
+transition: all 300ms;
+}
+.carta:hover .descripcion{
+    padding: 40px;
+ }
+.carta .descripcion h2{
+    margin-top:10px;
+
+}
+.carta .descripcion p{
+    margin-top:10px;
+
+}
+.carta .descripcion input{
+
+    padding: 10px 40px;
+    border: none;
+    border-radius: 8px;
+}
+.carta .descripcion input:hover{
+    background-color: #000;
+    color: white;
+    transition: 0.3s;
+}
+
+iframe{
+    margin-top: 25px;
+}
+
+@media screen and (max-width: 1450px){
+    #actividades h1{
+        margin-top: -2px;
+    }
+    .cartas{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+    .carta:hover{
+        margin: -20px;
+    }
+    
+   
+}
+@media screen and (max-width: 780px){
+    .cartas{
+        display: grid;
+        grid-template-columns: 1fr ;
+        
+    }
+    .carta:hover{
+        margin: -20px;
+    }
+    iframe{
+        width: 95%;
+        align-self: center;
+        
+
+    }
+    #actividades h4{
+       text-align: center;
+       padding: 20px;
+    }
+   
+}
 
 /**************************/
 /* CONTACTO SECTION*/
