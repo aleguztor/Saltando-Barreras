@@ -466,6 +466,10 @@ filter: saturate(10) ;
 background-image: url(../Multimedia/tuboljpeg.jpg);
 filter: saturate(2) ;
 }
+.carta:nth-of-type(4) .img_back{
+    background-image: url(../Multimedia/ymasback.jpg);
+    filter: saturate(2) ;
+    }
 
 .carta .descripcion{
     background-color: white;
