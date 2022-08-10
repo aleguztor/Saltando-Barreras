@@ -44,9 +44,9 @@ font-family: 'Quicksand', sans-serif; */
 
 /*CABECERA*/
 #cabecera{
-    height: 400px;
+    height: 600px;
     background-image: url(../Multimedia/futbol/encabezado.jpg);
-    background-position: center;
+    background-position: center ;
     background-size: cover;
     
    
