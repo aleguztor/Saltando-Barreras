@@ -673,6 +673,12 @@ footer p{
     margin: 5px;
     
 }
+.youtube:hover{
+    transform: scale(1.1);
+}
+.ig:hover{
+    transform: scale(1.1);
+}
 .redes{
     display: flex;
 }
