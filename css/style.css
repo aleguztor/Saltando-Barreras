@@ -409,7 +409,7 @@ strong{
 }
 
 .cartas{
-    max-width: 90%;
+    max-width: 95%;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -459,8 +459,8 @@ background-image: url(../Multimedia/cocinaback.jpg);
 filter: saturate(5) ;
 }
 .carta:nth-of-type(3) .img_back{
-background-image: url(../Multimedia/Gimnasiajpeg.jpg);
-filter: saturate(10) ;
+background-image: url(../Multimedia/futbolbackk.jpg);
+filter: saturate(5) ;
 }
 .carta:nth-of-type(2) .img_back{
 background-image: url(../Multimedia/futbolbackk.jpg);
@@ -514,8 +514,11 @@ transition: all 300ms;
     background-color: #81c04e;
   
 }
-iframe{
-    margin-top: 25px;
+video{
+    margin-top: 10px;
+    width: 300px;
+   
+  
 }
 
 @media screen and (max-width: 1450px){
@@ -580,10 +583,8 @@ iframe{
     text-align: center;
 }
 
-.formulario .btn:hover{
-    background-color: var(--verde);
-    color: rgb(255, 255, 255);
-    
+input{
+    padding: 10px;
     
 }
 @media screen and (max-width: 580px){
@@ -631,6 +632,32 @@ footer p{
     font-weight: 700;
     margin: 0;
 }
+.logos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width: 855px){
+    footer{
+        height: 350px;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 530px){
+    footer{
+        height: 550px;
+        flex-direction: column;
+        margin-bottom: 100px;
+    }
+    .logos{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+    
+
 
 
 
