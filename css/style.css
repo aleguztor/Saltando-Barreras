@@ -721,12 +721,37 @@ footer p{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    align-items: center;
     width: 66%;
     margin: 0 auto;
     background-color: #3d3d3d41;
     border-radius: 10px;
 
  }
+ .containernoticias img{
+    background-image: url(../Multimedia/YouTube_full-color_icon_\(2017\).svg.png);
+   background-color: white;
+    background-size: 20%;
+    background-repeat: no-repeat;
+    background-position: center;
+   border-radius: 20px;
+   padding: 10px;
+     border: solid 2px  rgb(149, 221, 142);
+     
+}
+.containernoticias img:hover{
+    transition: 0.3s;
+   scale: 1.1;
+     
+}
+ @media screen and (max-width: 1409px){
+    .containernoticias img{
+        display: none;
+    }
+ }
+    
+ 
+ 
  video{
     
     width: 300px;
